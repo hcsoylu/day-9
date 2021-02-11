@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #ffd166;
+        color: #ef476f;
+        max-width: 940px;
+        margin: 0 auto;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+      }
+      h2 {
+        color: #073b4c;
+        margin-left: 10px;
+        font-size: 50px;
+      }
+      #calendar {
+        background-color: #ef476f;
+        color: #ffd166;
+        width: 100%;
+        border: 6px solid;
+        border-radius: 8px;
+      }
+      .day {
+        display: inline-block;
+        width: 60px;
+        text-align: center;
+        height: 60px;
+      }
+      .day h3 {
+        font-weight: 300;
+        font-size: 26px;
+        margin: 0;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .selected {
+        border: 3px solid #06d6a0;
+        border-radius: 6px;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+      #ben {
+        border: 3px solid #073b4c;
+        padding: 10px;
+        margin: 20px;
+        background-color: #06d6a0;
+        color: #073b4c;
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+        width: 160px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <h2>Bingo</h2>
+      <input
+        id="ben"
+        type="button"
+        value="random number"
+        onclick="randomNumber()"
+      />
+    </div>
+
+    <div id="calendar"></div>
+
+    <script src="day9.js"></script>
+  </body>
+</html>
